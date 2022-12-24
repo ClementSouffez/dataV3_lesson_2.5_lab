@@ -125,6 +125,10 @@ LIMIT 10
 
 -- 13- How many films include Behind the Scenes content?
 
-SELECT title,special_features as special_feature
+SELECT count(film_id) number_of_films , special_features as feature
 FROM film
-WHERE special_features = 'Behind the Scenes'
+WHERE special_features = "Behind the Scenes"
+
+
+
+
